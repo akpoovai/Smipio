@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+/*
+ * Premium UI layer (glass, rings, deeper shadows).
+ * Active when: <html data-ui="premium">
+ * To undo: remove data-ui="premium" from index.html (or say "undo" in chat).
+ */
+@custom-variant premium (html[data-ui='premium'] &);
+
+/* Explicit tokens for custom CSS (Tailwind @theme utilities may not expose these for var() use). */
+:root {
+  --color-sandal: #e7d3b5;
+  --color-cream: #f6efe7;
+  --color-charcoal: #1f2937;
+  --color-gold: #c8a96b;
+  --color-brown: #8b7355;
+  --color-teal: #2d7a7f;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+@theme {
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --color-sandal: #e7d3b5;
+  --color-cream: #f6efe7;
+  --color-charcoal: #1f2937;
+  --color-gold: #c8a96b;
+  --color-brown: #8b7355;
+  --color-teal: #2d7a7f;
+  --shadow-glow-teal: 0 0 60px rgb(45 122 127 / 0.25);
+  --shadow-card: 0 25px 50px -12px rgb(31 41 55 / 0.12);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+    font-size: 15px;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(
+      165deg,
+      var(--color-cream) 0%,
+      var(--color-sandal) 48%,
+      #dcc9a8 100%
+    );
+    color: var(--color-charcoal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html[data-ui='premium'] body {
+    background: linear-gradient(
+      168deg,
+      #faf8f4 0%,
+      var(--color-cream) 22%,
+      var(--color-sandal) 52%,
+      #d4c4a8 88%,
+      #c9b89a 100%
+    );
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.085;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+  html[data-ui='premium'] .grain::after {
+    opacity: 0.07;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+
+}
