@@ -4,7 +4,7 @@ const ease = [0.22, 1, 0.36, 1]
 
 export default function WhySmipioIllustration({ src, alt }) {
   return (
-    <div className="relative mx-auto flex w-full max-w-[36rem] items-center justify-center lg:max-w-[42rem]">
+    <div className="relative mx-auto flex w-full max-w-[38rem] items-center justify-center lg:max-w-none lg:justify-end">
       <svg
         className="pointer-events-none absolute inset-[4%] h-[92%] w-[92%] text-charcoal/18"
         viewBox="0 0 400 400"
@@ -51,7 +51,7 @@ export default function WhySmipioIllustration({ src, alt }) {
         <img
           src={src}
           alt={alt}
-          className="relative z-10 block h-auto w-full max-h-[340px] object-contain drop-shadow-[0_22px_40px_rgba(31,41,55,0.18)] sm:max-h-[380px] md:max-h-[440px] lg:max-h-[500px]"
+          className="relative z-10 block h-auto w-full max-h-[380px] object-contain drop-shadow-[0_22px_40px_rgba(31,41,55,0.18)] sm:max-h-[430px] md:max-h-[490px] lg:max-h-[560px]"
           width={640}
           height={480}
           loading="lazy"

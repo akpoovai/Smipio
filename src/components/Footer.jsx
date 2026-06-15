@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { images } from '../lib/images.js'
 import { IconLinkedIn, IconX, IconYouTube } from './SocialIcons.jsx'
 
 const nav = [
@@ -19,11 +20,15 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 premium:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <a
-              href="#hero"
-              className="inline-block text-2xl font-semibold tracking-tight text-teal"
-            >
-              smipio
+            <a href="#hero" className="inline-flex items-center">
+              <img
+                src={images.logo.wordmarkLarge}
+                alt="Smipio"
+                className="block h-9 w-auto max-w-[10rem] object-contain"
+                width={1136}
+                height={353}
+                decoding="async"
+              />
             </a>
             <p className="mt-6 text-xs font-medium text-charcoal/55">© 2026</p>
           </div>

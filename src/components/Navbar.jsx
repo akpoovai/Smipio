@@ -49,7 +49,7 @@ export default function Navbar() {
           <img
             src={images.logo.wordmarkLarge}
             alt="Smipio"
-            className="block h-9 w-auto max-w-[11rem] object-contain md:h-10 md:max-w-[12rem]"
+            className="block h-10 w-auto max-w-[12rem] object-contain md:h-11 md:max-w-[13rem]"
             width={1136}
             height={353}
             decoding="async"
@@ -78,7 +78,7 @@ export default function Navbar() {
           </a>
           <a
             href="#pricing"
-            className="rounded-full bg-gradient-to-r from-teal to-teal/80 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-teal/30 transition hover:-translate-y-0.5 hover:shadow-teal/45 premium:shadow-xl premium:shadow-teal/35 premium:ring-2 premium:ring-white/25"
+            className="rounded-full bg-[#2DB988] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#2DB988]/30 transition hover:-translate-y-0.5 hover:bg-[#28a67a] hover:shadow-[#2DB988]/45 premium:shadow-xl premium:shadow-[#2DB988]/35 premium:ring-2 premium:ring-white/25"
           >
             Get started
           </a>
@@ -119,7 +119,7 @@ export default function Navbar() {
               ))}
               <a
                 href="#pricing"
-                className="mt-3 rounded-full bg-charcoal px-5 py-3 text-center text-sm font-semibold text-cream"
+                className="mt-3 rounded-full bg-[#2DB988] px-5 py-3 text-center text-sm font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
                 Get started

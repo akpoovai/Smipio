@@ -13,6 +13,7 @@ import presentationBg from '@img/AI Generated/Smipio Presentation BG.png'
 import whySmipioSection from '@img/AI Generated/second_section_image-transparent.png'
 import iconAware from '@img/icons/smipio-aware-main-logo-lightbg.png'
 import iconAwareNoName from '@img/icons/Icons without name/smipio-aware-main-logo-lightbg.png'
+import iconIgnite from '@img/icons/smipio-ignite-main-logo-lightbg.png'
 import iconIgniteNoName from '@img/icons/Icons without name/smipio-ignite-main-logo-lightbg.png'
 import iconGrow from '@img/icons/smipio-grow-main-logo-lightbg.png'
 import iconGrowNoName from '@img/icons/Icons without name/smipio-grow-main-logo-lightbg.png'
@@ -62,10 +63,10 @@ export const images = {
     background: presentationBg,
   },
   pricing: {
-    aware: iconAwareNoName,
-    ignite: iconIgniteNoName,
-    grow: iconGrowNoName,
-    achieve: iconAchieveNoName,
+    aware: iconAware,
+    ignite: iconIgnite,
+    grow: iconGrow,
+    achieve: iconAchieve,
   },
 }
 

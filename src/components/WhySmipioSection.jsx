@@ -1,6 +1,14 @@
 import { motion } from 'framer-motion'
 import { images } from '../lib/images.js'
 import WhySmipioIllustration from './WhySmipioIllustration.jsx'
+import {
+  storyBodyStack,
+  storyContainer,
+  storyGrid,
+  storyHeading,
+  storyImageCol,
+  storyTextCol,
+} from './storyLayout.js'
 
 const ease = [0.22, 1, 0.36, 1]
 
@@ -22,7 +30,7 @@ export default function WhySmipioSection() {
   return (
     <div
       id="why-smipio"
-      className="relative bg-transparent py-12 md:py-16 lg:py-20"
+      className="relative bg-transparent py-8 md:py-16 lg:py-20"
       aria-label="Why Smipio"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -54,44 +62,44 @@ export default function WhySmipioSection() {
       </div>
 
       <div className="relative z-10">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(320px,0.92fr)_minmax(0,1.08fr)] lg:gap-16 xl:gap-20">
-          <Reveal className="order-2 lg:order-1" delay={0.05}>
+        <div className={storyContainer}>
+          <div className={storyGrid}>
+          <Reveal className={storyTextCol} delay={0.05}>
+            <div className="inline-flex items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-brown/80 backdrop-blur-xl">
+              Why Smipio?
+            </div>
+
+            <h2 className={storyHeading}>
+              The World Is
+              <br />
+              Changing Faster
+              <br />
+              Than Human
+              <br />
+              Awareness
+            </h2>
+
+            <div className={storyBodyStack}>
+              <p>
+                AI is transforming careers, education, workplaces, and society.
+              </p>
+              <p>
+                Yet many remain trapped in rote learning, mindless digital
+                habits, and unclear career direction.
+              </p>
+              <p>
+                Smipio helps people become digitally wise, transform
+                consciously, and thrive in the AI era.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal className={storyImageCol}>
             <WhySmipioIllustration
               src={images.hero.whySmipioSection}
               alt="Person reflecting on direction and awareness"
             />
           </Reveal>
-
-          <div className="order-1 lg:order-2">
-            <Reveal>
-              <div className="inline-flex items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-brown/80 backdrop-blur-xl">
-                Why Smipio?
-              </div>
-
-              <h2 className="mt-6 max-w-2xl text-balance text-[2.35rem] font-semibold leading-[1.02] tracking-tight text-charcoal sm:text-[2.75rem] md:text-[3.2rem] lg:text-[3.55rem]">
-                The World Is
-                <br />
-                Changing Faster
-                <br />
-                Than Human
-                <br />
-                Awareness
-              </h2>
-
-              <div className="mt-7 max-w-xl space-y-4 text-base leading-relaxed text-charcoal/68 md:text-lg">
-                <p>
-                  AI is transforming careers, education, workplaces, and society.
-                </p>
-                <p>
-                  Yet many remain trapped in rote learning, mindless digital
-                  habits, and unclear career direction.
-                </p>
-                <p>
-                  Smipio helps people become digitally wise, transform
-                  consciously, and thrive in the AI era.
-                </p>
-              </div>
-            </Reveal>
           </div>
         </div>
       </div>

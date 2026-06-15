@@ -5,7 +5,7 @@ import { FadeIn } from './motion.jsx'
 const plans = [
   {
     slug: 'aware',
-    name: 'AWARE',
+    name: '',
     description: 'Build self-awareness and understand what drives you.',
     features: [
       'Reflection & Journaling',
@@ -13,11 +13,12 @@ const plans = [
       'Personal Insights',
       'Basic Goal Setting',
     ],
-    cta: 'Start Aware',
+    cta: 'Get Started',
+    bordered: true,
   },
   {
     slug: 'ignite',
-    name: 'IGNITE',
+    name: '',
     description: 'Learn faster and transform how you think.',
     features: [
       'All in Aware',
@@ -27,10 +28,11 @@ const plans = [
       'Progress Tracking',
     ],
     cta: 'Start Ignite',
+    bordered: true,
   },
   {
     slug: 'grow',
-    name: 'GROW',
+    name: '',
     description: 'Grow your skills and build a meaningful career.',
     features: [
       'All in Ignite',
@@ -40,10 +42,11 @@ const plans = [
       'Personalized Path',
     ],
     cta: 'Start Grow',
+    bordered: true,
   },
   {
     slug: 'achieve',
-    name: 'ACHIEVE',
+    name: '',
     description: 'Achieve your goals and make a lasting impact.',
     features: [
       'All in Grow',
@@ -53,6 +56,7 @@ const plans = [
       'Advanced Analytics',
     ],
     cta: 'Start Achieve',
+    bordered: true,
   },
 ]
 
@@ -86,10 +90,12 @@ export default function PricingSection() {
             >
               <PricingCard
                 logo={images.pricing[plan.slug]}
+                slug={plan.slug}
                 name={plan.name}
                 description={plan.description}
                 features={plan.features}
                 cta={plan.cta}
+                bordered={plan.bordered}
               />
             </FadeIn>
           ))}
