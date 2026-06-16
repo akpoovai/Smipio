@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 
 const ease = [0.22, 1, 0.36, 1]
-const cardBackground = '#f9f0e3'
+const cardBackground = '#fef0d5'
 
 /**
  * @param {{

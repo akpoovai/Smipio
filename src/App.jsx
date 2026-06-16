@@ -10,9 +10,9 @@ import { images } from './lib/images.js'
 export default function App() {
   return (
     <div
-      className="min-h-screen"
+      className="grain relative min-h-screen"
       style={{
-        backgroundColor: '#eadbc5',
+        backgroundColor: '#FEF5E2',
         backgroundImage: `url(${images.presentation.background})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center top',

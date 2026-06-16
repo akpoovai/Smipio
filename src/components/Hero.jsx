@@ -70,7 +70,7 @@ export default function Hero() {
               <img
                 src={images.hero.architectYourselfWisely}
                 alt="Architect Yourself Wisely illustration"
-                className="relative z-10 block h-auto w-full max-h-[300px] object-contain drop-shadow-[0_22px_40px_rgba(31,41,55,0.2)] sm:max-h-[340px] md:max-h-[390px] lg:max-h-[440px]"
+                className="relative z-10 block h-auto w-full max-h-[220px] object-contain drop-shadow-[0_22px_40px_rgba(31,41,55,0.2)] sm:max-h-[250px] md:max-h-[290px] lg:max-h-[330px]"
                 width={956}
                 height={872}
                 loading="eager"

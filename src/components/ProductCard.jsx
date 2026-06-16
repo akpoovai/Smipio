@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 
 const productNameColor = '#F0A128'
-const cardBackground = '#f8ebdb'
+const cardBackground = '#fef0d5'
 
 /**
  * @param {{
@@ -62,7 +62,7 @@ export default function ProductCard({
             />
           ) : null}
           <h3
-            className="font-['Calibri','Segoe_UI','Helvetica_Neue',sans-serif] text-[2.5rem] font-light leading-[0.95] tracking-[0.2em]"
+            className="font-['Calibri','Segoe_UI','Helvetica_Neue',sans-serif] text-[2.5rem] font-semibold leading-[0.95] tracking-[0.1em]"
             style={{ color: productNameColor }}
           >
             {name}
