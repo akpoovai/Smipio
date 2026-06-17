@@ -72,13 +72,13 @@ export default function Navbar() {
         <div className="hidden items-center gap-3 sm:flex">
           <a
             href="#pricing"
-            className="rounded-full border border-charcoal/15 bg-white/30 px-5 py-2 text-sm font-semibold text-charcoal shadow-sm backdrop-blur-md transition hover:border-teal/40 hover:bg-white/50 premium:border-white/60 premium:bg-white/45 premium:shadow-md premium:ring-1 premium:ring-white/40"
+            className="btn-smipio-outline rounded-full border border-charcoal/15 bg-white/30 px-5 py-2 text-sm font-semibold text-charcoal shadow-sm backdrop-blur-md premium:border-white/60 premium:bg-white/45 premium:shadow-md premium:ring-1 premium:ring-white/40"
           >
             Sign in
           </a>
           <a
             href="#pricing"
-            className="rounded-full bg-[#2DB988] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#2DB988]/30 transition hover:-translate-y-0.5 hover:bg-[#28a67a] hover:shadow-[#2DB988]/45 premium:shadow-xl premium:shadow-[#2DB988]/35 premium:ring-2 premium:ring-white/25"
+            className="btn-smipio rounded-full px-5 py-2 text-sm font-semibold shadow-lg shadow-[#2DB988]/30 hover:-translate-y-0.5 hover:shadow-[#2DB988]/45 premium:shadow-xl premium:shadow-[#2DB988]/35 premium:ring-2 premium:ring-white/25"
           >
             Get started
           </a>
@@ -119,7 +119,7 @@ export default function Navbar() {
               ))}
               <a
                 href="#pricing"
-                className="mt-3 rounded-full bg-[#2DB988] px-5 py-3 text-center text-sm font-semibold text-white"
+                className="btn-smipio mt-3 rounded-full px-5 py-3 text-center text-sm font-semibold"
                 onClick={() => setOpen(false)}
               >
                 Get started

@@ -9,17 +9,12 @@ import { images } from './lib/images.js'
 
 export default function App() {
   return (
-    <div
-      className="grain relative min-h-screen"
-      style={{
-        backgroundColor: '#FEF5E2',
-        backgroundImage: `url(${images.presentation.background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-      }}
-    >
+    <div className="relative min-h-screen">
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-10 bg-[#FEF5E2] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${images.presentation.background})` }}
+      />
       <Navbar />
       <main className="min-h-screen bg-transparent">
         <Hero />

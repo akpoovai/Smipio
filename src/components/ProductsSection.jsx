@@ -1,6 +1,7 @@
 import ProductCard from './ProductCard.jsx'
 import { images } from '../lib/images.js'
 import { FadeIn } from './motion.jsx'
+import { sectionLabel, sectionSpacingAfterHero } from './storyLayout.js'
 
 const products = [
   {
@@ -22,6 +23,7 @@ const products = [
     showNumber: false,
     showDivider: false,
     heading: 'Unlock Human Intelligence',
+    bordered: true,
     description:
       'Power yourself through multi-sensory micro-learning that sticks long after the lesson ends.',
   },
@@ -55,21 +57,41 @@ export default function ProductsSection() {
   return (
     <section
       id="products"
-      className="relative bg-transparent pt-10 pb-20 md:pt-12 md:pb-24 lg:pt-14 lg:pb-28"
+      className={`relative bg-transparent ${sectionSpacingAfterHero}`}
     >
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <FadeIn className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
-          <p className="text-[13px] font-medium uppercase tracking-[0.35em] text-[#9A9A9A]">
-            Products
-          </p>
-          <h2 className="mt-4 font-serif text-[clamp(1.75rem,3.2vw,2.5rem)] font-bold leading-tight tracking-tight text-[#1F2937]">
-            A curated ecosystem for intentional growth
-          </h2>
-        </FadeIn>
+        <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-10 md:gap-12 lg:gap-14">
+          <FadeIn className="w-full">
+            <p className={`text-center ${sectionLabel}`}>
+              Products
+            </p>
+            <div className="mt-4 flex w-full flex-col items-center gap-5 sm:flex-row sm:items-center sm:justify-center sm:gap-8 md:gap-10">
+              <div className="flex shrink-0 items-center justify-center">
+                <img
+                  src={images.logo.transformMain}
+                  alt="Smipio Transform"
+                  className="h-auto w-[8.75rem] max-w-full object-contain sm:w-[9.75rem] md:w-[10.75rem]"
+                  width={280}
+                  height={120}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="min-w-0 max-w-xl text-center sm:text-left">
+                <h2 className="text-balance text-[clamp(1.2rem,2.1vw,1.75rem)] font-bold leading-snug tracking-tight text-charcoal">
+                  The Wise Navigator to be digitally wise
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-[#6B7280] md:text-base">
+                  Smipio Transform helps you become aware, ignite human intelligence,
+                  grow in the right career path, and consistently achieve true success
+                  with clarity, confidence, and ease.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
 
-        <div className="mx-auto flex max-w-5xl flex-col gap-10 md:gap-12 lg:gap-14">
           {products.map((product, index) => (
-            <FadeIn key={product.slug} delay={index * 0.1}>
+            <FadeIn key={product.slug} delay={index * 0.1} className="w-full">
               <ProductCard
                 number={product.number}
                 total={total}
@@ -81,6 +103,7 @@ export default function ProductsSection() {
                 icon={images.products[product.slug].nameIcon}
                 showNumber={product.showNumber}
                 showDivider={product.showDivider}
+                bordered={product.bordered}
               />
             </FadeIn>
           ))}

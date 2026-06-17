@@ -1,6 +1,7 @@
 import PricingCard from './PricingCard.jsx'
 import { images } from '../lib/images.js'
 import { FadeIn } from './motion.jsx'
+import { sectionHeaderGap, sectionLabel, sectionSpacing, sectionTitle } from './storyLayout.js'
 
 const plans = [
   {
@@ -64,15 +65,15 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative bg-transparent py-24 md:py-32 lg:py-36"
+      className={`relative bg-transparent ${sectionSpacing}`}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <FadeIn className="mx-auto max-w-4xl text-center">
-          <p className="text-[13px] font-medium uppercase tracking-[0.35em] text-[#9A9A9A]">
+          <p className={sectionLabel}>
             Pricing
           </p>
 
-          <h2 className="mt-5 font-serif text-[clamp(2.5rem,6vw,4.25rem)] font-bold leading-[1.08] tracking-tight text-[#1F2937]">
+          <h2 className={`mt-5 ${sectionTitle.replace('font-bold', 'font-semibold')}`}>
             Choose the plan that fits your journey
           </h2>
 
@@ -81,12 +82,12 @@ export default function PricingSection() {
           </p>
         </FadeIn>
 
-        <div className="mt-16 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:snap-none lg:mt-20 lg:grid-cols-4 lg:gap-7 [&::-webkit-scrollbar]:hidden">
+        <div className={`${sectionHeaderGap} flex flex-col items-center gap-5 md:grid md:grid-cols-2 md:items-stretch md:gap-6 lg:grid-cols-4 lg:gap-7`}>
           {plans.map((plan, index) => (
             <FadeIn
               key={plan.slug}
               delay={index * 0.08}
-              className="h-full min-w-[86vw] shrink-0 snap-center md:min-w-0"
+              className="h-full w-full max-w-[18.5rem] md:max-w-none"
             >
               <PricingCard
                 logo={images.pricing[plan.slug]}

@@ -5,7 +5,7 @@ import {
   storyBody,
   storyContainer,
   storyGrid,
-  storyHeading,
+  heroStoryHeading,
   storyImageCol,
   storyTextCol,
 } from './storyLayout.js'
@@ -36,7 +36,7 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 mx-auto max-w-[1440px] px-6 pb-12 pt-8 lg:px-10 lg:pb-16 premium:pb-14">
+      <div className="relative z-10 mx-auto max-w-[1440px] px-6 pb-10 pt-8 lg:px-10 lg:pb-12">
         <motion.div className="grid gap-12 lg:gap-16">
           <div className={storyContainer}>
             <div className={storyGrid}>
@@ -46,15 +46,18 @@ export default function Hero() {
               transition={{ duration: 0.75, ease }}
               className={storyTextCol}
             >
-              <div className="inline-flex items-center rounded-full border border-sandal/45 bg-cream/88 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-brown/80">
-                Architect Yourself Wisely
+              <div className="inline-flex items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-brown/80 backdrop-blur-xl">
+                TAKE CHARGE
               </div>
-              <h1 className={storyHeading}>
-                Architect
+              <h1
+                className={heroStoryHeading}
+                style={{ color: '#B48400' }}
+              >
+                ARCHITECT
                 <br />
-                Yourself
+                YOURSELF
                 <br />
-                Wisely
+                WISELY
               </h1>
               <p className={storyBody}>
                 Don&apos;t Be Programmed. Drive Yourself.
@@ -90,15 +93,18 @@ export default function Hero() {
               transition={{ duration: 0.75, delay: 0.12, ease }}
               className={storyTextCol}
             >
-              <div className="inline-flex items-center rounded-full border border-sandal/45 bg-cream/88 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-brown/80">
-                Be Digitally Wise
+              <div className="inline-flex items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-brown/80 backdrop-blur-xl">
+                TRANSFORM WISELY
               </div>
-              <h2 className={storyHeading}>
-                Be
+              <h2
+                className={heroStoryHeading}
+                style={{ color: '#B48400' }}
+              >
+                BE
                 <br />
-                Digitally
+                DIGITALLY
                 <br />
-                Wise
+                WISE
               </h2>
               <p className={storyBody}>
                 Think Better. Learn Deeply. Perform Brilliantly.

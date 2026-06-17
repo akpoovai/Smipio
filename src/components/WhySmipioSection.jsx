@@ -5,7 +5,6 @@ import {
   storyBodyStack,
   storyContainer,
   storyGrid,
-  storyHeading,
   storyImageCol,
   storyTextCol,
 } from './storyLayout.js'
@@ -30,7 +29,7 @@ export default function WhySmipioSection() {
   return (
     <div
       id="why-smipio"
-      className="relative bg-transparent py-8 md:py-16 lg:py-20"
+      className="relative bg-transparent py-8 md:py-12 lg:py-14"
       aria-label="Why Smipio"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -69,14 +68,13 @@ export default function WhySmipioSection() {
               Why Smipio?
             </div>
 
-            <h2 className={storyHeading}>
-              The World Is
+            <h2
+              className="mt-6 max-w-2xl text-balance text-[1.85rem] font-semibold leading-[1.08] tracking-tight sm:text-[2.1rem] md:text-[2.35rem] lg:text-[2.5rem]"
+              style={{ color: '#B48400' }}
+            >
+              THE WORLD IS CHANGING,
               <br />
-              Changing Faster
-              <br />
-              Than Human
-              <br />
-              Awareness
+              ARE YOU EVOLVING?
             </h2>
 
             <div className={storyBodyStack}>
@@ -86,10 +84,6 @@ export default function WhySmipioSection() {
               <p>
                 Yet many remain trapped in rote learning, mindless digital
                 habits, and unclear career direction.
-              </p>
-              <p>
-                Smipio helps people become digitally wise, transform
-                consciously, and thrive in the AI era.
               </p>
             </div>
           </Reveal>

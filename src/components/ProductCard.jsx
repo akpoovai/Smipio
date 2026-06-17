@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 
-const productNameColor = '#F0A128'
+const productNameColor = '#B48400'
 const cardBackground = '#fef0d5'
 
 /**
@@ -15,6 +15,7 @@ const cardBackground = '#fef0d5'
  *   icon?: string
  *   showNumber?: boolean
  *   showDivider?: boolean
+ *   bordered?: boolean
  *   href?: string
  * }} props
  */
@@ -29,11 +30,12 @@ export default function ProductCard({
   icon,
   showNumber = true,
   showDivider = true,
+  bordered = true,
   href = '#pricing',
 }) {
   return (
     <article
-      className="group mx-auto grid w-full max-w-5xl items-center gap-6 rounded-[24px] border border-white p-6 transition-all duration-300 ease-out hover:-translate-y-2 md:gap-8 md:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:gap-10 lg:p-9"
+      className={`group mx-auto grid w-full max-w-5xl items-center gap-6 rounded-[24px] p-6 shadow-[0_8px_30px_-18px_rgba(31,41,55,0.08)] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_24px_56px_-22px_rgba(31,41,55,0.22)] md:gap-8 md:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:gap-10 lg:p-9 ${bordered ? 'border border-white' : ''}`}
       style={{ '--product-accent': accent, backgroundColor: cardBackground }}
     >
       <div className="order-2 flex flex-col lg:order-1">
@@ -62,7 +64,7 @@ export default function ProductCard({
             />
           ) : null}
           <h3
-            className="font-['Calibri','Segoe_UI','Helvetica_Neue',sans-serif] text-[2.5rem] font-semibold leading-[0.95] tracking-[0.1em]"
+            className="font-['Calibri','Segoe_UI','Helvetica_Neue',sans-serif] text-[1.75rem] font-light leading-[0.95] tracking-[0.1em]"
             style={{ color: productNameColor }}
           >
             {name}
@@ -89,7 +91,7 @@ export default function ProductCard({
 
         <a
           href={href}
-          className="mt-8 inline-flex w-fit items-center gap-2 rounded-xl bg-[#2DB988] px-5 py-2.5 text-[13px] font-medium text-white shadow-[0_10px_24px_-14px_rgba(45,185,136,0.45)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#28a67a]"
+          className="btn-smipio mt-8 inline-flex w-fit items-center gap-2 rounded-xl px-5 py-2.5 text-[13px] font-medium shadow-[0_10px_24px_-14px_rgba(45,185,136,0.45)] ease-out hover:-translate-y-0.5"
         >
           Get Started
           <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.2} aria-hidden />
