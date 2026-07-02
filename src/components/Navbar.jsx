@@ -2,13 +2,9 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { images } from '../lib/images.js'
+import { siteNavLinks } from '../lib/siteNav.js'
 
-const links = [
-  { href: '#products', label: 'Products' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#ecosystem', label: 'Ecosystem' },
-  { href: '#contact', label: 'Contact' },
-]
+const links = siteNavLinks
 
 const ease = [0.22, 1, 0.36, 1]
 

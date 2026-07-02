@@ -11,9 +11,9 @@ const products = [
     accent: '#59B67A',
     showNumber: false,
     showDivider: false,
-    heading: 'Know Who You Are',
+    heading: 'Discover Yourself',
     description:
-      'Build self-direction through reflection — understand your patterns, values, and what truly drives you.',
+      'Become aware of who you are, what drives you, and how to align your life and career with purpose.',
   },
   {
     slug: 'transform',
@@ -25,7 +25,7 @@ const products = [
     heading: 'Unlock Human Intelligence',
     bordered: true,
     description:
-      'Power yourself through multi-sensory micro-learning that sticks long after the lesson ends.',
+      'In the age of AI, unlock your human intelligence, one tiny learning at a time.',
   },
   {
     slug: 'grow',
@@ -34,9 +34,9 @@ const products = [
     accent: '#3D84E6',
     showNumber: false,
     showDivider: false,
-    heading: 'Navigate Your Happy Career',
+    heading: 'Navigate Your Career',
     description:
-      "Progress with purpose and direction — build a career that's genuinely yours.",
+      'Gain clarity, bridge your skill gap through personalized learning, and become career-ready for the evolving world of work.',
   },
   {
     slug: 'achieve',
@@ -47,7 +47,7 @@ const products = [
     showDivider: false,
     heading: 'Make Your Mission Possible',
     description:
-      'Execute thoughtfully with clarity — turn intentions into real, lasting outcomes.',
+      'Turn your aspirations into focused mission, meaningful actions, and steady progress.',
   },
 ]
 
@@ -79,7 +79,7 @@ export default function ProductsSection() {
               </div>
               <div className="min-w-0 max-w-xl text-center sm:text-left">
                 <h2 className="text-balance text-[clamp(1.2rem,2.1vw,1.75rem)] font-bold leading-snug tracking-tight text-charcoal">
-                  The Wise Navigator to be digitally wise
+                  The Wise Navigator to Be Digitally Wise
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-[#6B7280] md:text-base">
                   Smipio Transform helps you become aware, ignite human intelligence,

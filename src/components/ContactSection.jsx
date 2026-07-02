@@ -14,8 +14,8 @@ const contactDetails = [
   {
     Icon: Mail,
     label: 'Email',
-    value: 'hello@smipio.com',
-    href: 'mailto:hello@smipio.com',
+    value: 'connect@smipio.com',
+    href: 'mailto:connect@smipio.com',
   },
   {
     Icon: MapPin,

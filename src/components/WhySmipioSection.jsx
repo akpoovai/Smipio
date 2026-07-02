@@ -80,8 +80,6 @@ export default function WhySmipioSection() {
             <div className={storyBodyStack}>
               <p>
                 AI is transforming careers, education, workplaces, and society.
-              </p>
-              <p>
                 Yet many remain trapped in rote learning, mindless digital
                 habits, and unclear career direction.
               </p>

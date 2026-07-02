@@ -50,7 +50,7 @@ export default function Hero() {
                 TAKE CHARGE
               </div>
               <h1
-                className={heroStoryHeading}
+                className={heroStoryHeading.replace('font-semibold', 'font-light')}
                 style={{ color: '#B48400' }}
               >
                 ARCHITECT
@@ -60,7 +60,8 @@ export default function Hero() {
                 WISELY
               </h1>
               <p className={storyBody}>
-                Don&apos;t Be Programmed. Drive Yourself.
+                Don&apos;t be programmed by external misdirection. Drive yourself
+                with clarity, competence, and confidence.
               </p>
             </motion.div>
 
@@ -107,7 +108,7 @@ export default function Hero() {
                 WISE
               </h2>
               <p className={storyBody}>
-                Think Better. Learn Deeply. Perform Brilliantly.
+                Think Deeply. Learn Consciously. Perform Wisely.
               </p>
             </motion.div>
 
