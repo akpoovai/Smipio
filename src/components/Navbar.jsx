@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { images } from '../lib/images.js'
@@ -38,10 +39,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 lg:px-10 premium:py-5">
-        <a
-          href="#hero"
-          className="flex shrink-0 items-center"
-        >
+        <Link to="/#hero" className="flex shrink-0 items-center">
           <img
             src={images.logo.wordmarkLarge}
             alt="Smipio"
@@ -50,34 +48,34 @@ export default function Navbar() {
             height={353}
             decoding="async"
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-10 text-sm font-medium text-charcoal/85 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <a
-                href={l.href}
+              <Link
+                to={l.href}
                 className="relative transition hover:text-teal after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-teal after:transition after:content-[''] hover:after:scale-x-100"
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden items-center gap-3 sm:flex">
-          <a
-            href="#pricing"
+          <Link
+            to="/#pricing"
             className="btn-smipio-outline rounded-full border border-charcoal/15 bg-white/30 px-5 py-2 text-sm font-semibold text-charcoal shadow-sm backdrop-blur-md premium:border-white/60 premium:bg-white/45 premium:shadow-md premium:ring-1 premium:ring-white/40"
           >
             Sign in
-          </a>
-          <a
-            href="#pricing"
+          </Link>
+          <Link
+            to="/#pricing"
             className="btn-smipio rounded-full px-5 py-2 text-sm font-semibold shadow-lg shadow-[#2DB988]/30 hover:-translate-y-0.5 hover:shadow-[#2DB988]/45 premium:shadow-xl premium:shadow-[#2DB988]/35 premium:ring-2 premium:ring-white/25"
           >
             Get started
-          </a>
+          </Link>
         </div>
 
         <button
@@ -104,22 +102,22 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-1 px-6 py-5">
               {links.map((l) => (
-                <a
+                <Link
                   key={l.href}
-                  href={l.href}
+                  to={l.href}
                   className="rounded-xl px-3 py-3 text-[15px] font-medium text-charcoal/90 hover:bg-white/35"
                   onClick={() => setOpen(false)}
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#pricing"
+              <Link
+                to="/#pricing"
                 className="btn-smipio mt-3 rounded-full px-5 py-3 text-center text-sm font-semibold"
                 onClick={() => setOpen(false)}
               >
                 Get started
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

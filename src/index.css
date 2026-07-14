@@ -79,6 +79,23 @@
     text-wrap: balance;
   }
 
+  .legal-toc-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(31 41 55 / 0.22) transparent;
+  }
+
+  .legal-toc-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .legal-toc-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .legal-toc-scroll::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background: rgb(31 41 55 / 0.2);
+  }
 }
 
 @layer components {

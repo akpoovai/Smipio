@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { images } from '../lib/images.js'
 import { siteNavLinks } from '../lib/siteNav.js'
 import { IconFacebook, IconInstagram, IconLinkedIn, IconX } from './SocialIcons.jsx'
@@ -5,8 +6,8 @@ import { IconFacebook, IconInstagram, IconLinkedIn, IconX } from './SocialIcons.
 const resources = [
   { href: '#', label: 'Help Center' },
   { href: '#', label: 'FAQ' },
-  { href: '#', label: 'Privacy Policy' },
-  { href: '#', label: 'Terms of Service' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms-and-conditions', label: 'Terms of Service' },
   { href: '#', label: 'Cookie Policy' },
 ]
 
@@ -29,9 +30,15 @@ function FooterLinkList({ items, ariaLabel }) {
       <ul className="mt-5 space-y-3">
         {items.map((item) => (
           <li key={item.label}>
-            <a href={item.href} className={footerLink}>
-              {item.label}
-            </a>
+            {item.href === '#' ? (
+              <a href="#" className={footerLink}>
+                {item.label}
+              </a>
+            ) : (
+              <Link to={item.href} className={footerLink}>
+                {item.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -45,7 +52,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16 lg:px-10">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
           <div>
-            <a href="#hero" className="inline-flex items-center">
+            <Link to="/#hero" className="inline-flex items-center">
               <img
                 src={images.logo.wordmarkLarge}
                 alt="Smipio"
@@ -54,7 +61,7 @@ export default function Footer() {
                 height={353}
                 decoding="async"
               />
-            </a>
+            </Link>
             <p className="mt-3 text-sm font-medium tracking-wide text-charcoal/68">
               Digitally Wise
             </p>
