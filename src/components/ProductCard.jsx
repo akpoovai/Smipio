@@ -64,7 +64,7 @@ export default function ProductCard({
             />
           ) : null}
           <h3
-            className="font-['Calibri','Segoe_UI','Helvetica_Neue',sans-serif] text-[1.75rem] font-light leading-[0.95] tracking-[0.1em]"
+            className="font-display text-[2.25rem] font-normal uppercase leading-[0.95] tracking-[0.1em]"
             style={{ color: productNameColor }}
           >
             {name}
@@ -85,7 +85,7 @@ export default function ProductCard({
           {heading}
         </h4>
 
-        <p className="mt-5 max-w-lg text-base leading-[1.75] text-[#6B7280] md:text-lg">
+        <p className="mt-5 max-w-lg text-base leading-[1.45] text-[#6B7280] md:text-lg">
           {description}
         </p>
 

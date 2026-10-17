@@ -65,14 +65,14 @@ export default function ProductsSection() {
             <p className={`text-center ${sectionLabel}`}>
               Products
             </p>
-            <div className="mt-4 flex w-full flex-col items-center gap-5 sm:flex-row sm:items-center sm:justify-center sm:gap-8 md:gap-10">
+            <div className="mt-10 flex w-full flex-col items-center gap-5 sm:mt-12 sm:flex-row sm:items-center sm:justify-center sm:gap-12 md:mt-14 md:gap-16">
               <div className="flex shrink-0 items-center justify-center">
                 <img
                   src={images.logo.transformMain}
                   alt="Smipio Transform"
-                  className="h-auto w-[8.75rem] max-w-full object-contain sm:w-[9.75rem] md:w-[10.75rem]"
-                  width={280}
-                  height={120}
+                  className="h-auto w-auto max-h-[5.25rem] max-w-[8.5rem] object-contain sm:max-h-[5.75rem] sm:max-w-[9.5rem] md:max-h-[6.5rem] md:max-w-[10.5rem]"
+                  width={320}
+                  height={140}
                   loading="lazy"
                   decoding="async"
                 />

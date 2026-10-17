@@ -8,7 +8,7 @@ const cardBackground = '#fef0d5'
 const pageBackground = '#fef5e2'
 
 const inputClass =
-  'mt-2 w-full rounded-xl border border-[#fef5e2] bg-[#fef5e2] px-4 py-3 text-sm text-charcoal outline-none transition placeholder:text-charcoal/40 focus:border-teal/45 focus:ring-2 focus:ring-teal/15'
+  'mt-2 w-full rounded-xl border border-[#fef5e2] bg-[#fef5e2] px-4 py-3 text-base text-charcoal outline-none transition placeholder:text-charcoal/40 focus:border-teal/45 focus:ring-2 focus:ring-teal/15'
 
 const contactDetails = [
   {

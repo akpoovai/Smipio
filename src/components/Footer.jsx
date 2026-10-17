@@ -12,10 +12,10 @@ const resources = [
 ]
 
 const socialLinks = [
-  { Icon: IconX, href: 'https://twitter.com/smipio', label: 'X (Twitter)' },
-  { Icon: IconFacebook, href: 'https://facebook.com/smipio', label: 'Facebook' },
+  { Icon: IconX, href: 'https://x.com/smipio', label: 'X (Twitter)' },
+  { Icon: IconFacebook, href: 'https://www.facebook.com/smipio', label: 'Facebook' },
   { Icon: IconInstagram, href: 'https://instagram.com/smipio', label: 'Instagram' },
-  { Icon: IconLinkedIn, href: 'https://linkedin.com/company/smipio', label: 'LinkedIn' },
+  { Icon: IconLinkedIn, href: 'https://www.linkedin.com/company/smipio', label: 'LinkedIn' },
 ]
 
 const columnLabel =
@@ -62,7 +62,7 @@ export default function Footer() {
                 decoding="async"
               />
             </Link>
-            <p className="mt-3 text-sm font-medium tracking-wide text-charcoal/68">
+            <p className="-mt-0.5 text-sm font-medium tracking-wide text-charcoal/68">
               Digitally Wise
             </p>
           </div>

@@ -26,7 +26,7 @@ function ScrollManager() {
 
 export default function SiteLayout() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden">
       <div
         aria-hidden
         className="pointer-events-none fixed inset-0 -z-10 bg-[#FEF5E2] bg-cover bg-center bg-no-repeat"
