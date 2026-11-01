@@ -68,12 +68,11 @@ export default function ProductsSection() {
             <div className="mt-10 flex w-full flex-col items-center gap-5 sm:mt-12 sm:flex-row sm:items-center sm:justify-center sm:gap-12 md:mt-14 md:gap-16">
               <div className="flex shrink-0 items-center justify-center">
                 <img
-                  src={images.logo.transformMain}
+                  src={images.logo.transform}
                   alt="Smipio Transform"
-                  className="h-auto w-auto max-h-[5.25rem] max-w-[8.5rem] object-contain sm:max-h-[5.75rem] sm:max-w-[9.5rem] md:max-h-[6.5rem] md:max-w-[10.5rem]"
-                  width={320}
-                  height={140}
-                  loading="lazy"
+                  className="h-auto w-[11rem] object-contain sm:w-[13rem] md:w-[15rem]"
+                  width={1536}
+                  height={1024}
                   decoding="async"
                 />
               </div>

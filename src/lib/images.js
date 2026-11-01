@@ -21,7 +21,7 @@ import iconAchieve from '@img/icons/smipio-achieve-main-logo-lightbg.png'
 import iconAchieveNoName from '@img/icons/Icons without name/smipio-achieve-main-logo-lightbg.png'
 import logoSmall from '@img/logo/smipio-logo-2026-small.png'
 import logoWordmarkLarge from '@img/logo/smipio-logo-2026-big.png'
-import logoTransformMain from '@img/logo/smipio-transform-main-logo-lightbg-new.png'
+import logoTransform from '@img/logo/Colourful Butterfly Transform Logo.png'
 import logoIconLight from '@img/logo/smipio-icon-transbg-lightbg.png'
 import logoIconDark from '@img/logo/smipio-icon-transbg-darkbg.png'
 
@@ -59,7 +59,7 @@ export const images = {
     wordmarkLarge: logoWordmarkLarge,
     iconLight: logoIconLight,
     iconDark: logoIconDark,
-    transformMain: logoTransformMain,
+    transform: logoTransform,
   },
   presentation: {
     background: presentationBg,

@@ -20,12 +20,6 @@ export default function Hero() {
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.75, ease }}
-          className="absolute -left-28 top-20 h-80 w-80 rounded-full bg-teal/12 blur-3xl"
-        />
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.75, ease }}
           className="absolute right-0 top-28 h-[28rem] w-[28rem] rounded-full bg-gold/20 blur-3xl"
         />
         <motion.div

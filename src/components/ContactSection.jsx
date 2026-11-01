@@ -35,7 +35,6 @@ export default function ContactSection() {
   return (
     <section id="contact" className={`relative overflow-hidden ${sectionSpacing}`}>
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="absolute -left-[18%] top-[12%] h-[420px] w-[420px] rounded-full bg-teal/12 blur-3xl" />
         <div className="absolute -right-[12%] bottom-[8%] h-[380px] w-[380px] rounded-full bg-gold/15 blur-3xl" />
       </div>
 
