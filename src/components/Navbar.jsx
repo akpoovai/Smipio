@@ -34,7 +34,7 @@ export default function Navbar() {
       transition={{ duration: 0.45, ease }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled || open
-          ? 'border-b border-white/30 bg-cream/70 shadow-card backdrop-blur-2xl premium:border-white/50 premium:bg-white/55 premium:shadow-[0_20px_60px_-18px_rgba(31,41,55,0.14)] premium:backdrop-blur-3xl'
+          ? 'border-b border-[#f3e4c4] bg-[#fef0d5] shadow-card md:border-white/30 md:bg-cream/70 md:backdrop-blur-2xl premium:md:border-white/50 premium:md:bg-white/55 premium:md:shadow-[0_20px_60px_-18px_rgba(31,41,55,0.14)] premium:md:backdrop-blur-3xl'
           : 'border-b border-transparent bg-transparent'
       }`}
     >
@@ -80,7 +80,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="inline-flex rounded-2xl border border-white/50 bg-white/35 p-2.5 text-charcoal backdrop-blur-md md:hidden"
+          className="inline-flex rounded-2xl border border-[#f3e4c4] bg-[#fef0d5] p-2.5 text-charcoal md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? 'Close menu' : 'Open menu'}
@@ -98,7 +98,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.35, ease }}
-            className="border-t border-white/25 bg-cream/80 backdrop-blur-2xl md:hidden"
+            className="border-t border-[#f3e4c4] bg-[#fef0d5] md:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-5">
               {links.map((l) => (

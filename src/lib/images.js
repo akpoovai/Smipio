@@ -11,14 +11,10 @@ import productGrow from '@img/AI Generated/Smipio Website - Product Grow - Trans
 import productAchieve from '@img/AI Generated/Smipio Website - Product Achieve - Trans BG.png'
 import presentationBg from '@img/AI Generated/Smipio Presentation BG.png'
 import whySmipioSection from '@img/AI Generated/second_section_image_cropped.png'
-import iconAware from '@img/icons/smipio-aware-main-logo-lightbg.png'
-import iconAwareNoName from '@img/icons/Icons without name/smipio-aware-main-logo-lightbg.png'
-import iconIgnite from '@img/icons/smipio-ignite-main-logo-lightbg.png'
-import iconIgniteNoName from '@img/icons/Icons without name/smipio-ignite-main-logo-lightbg.png'
-import iconGrow from '@img/icons/smipio-grow-main-logo-lightbg.png'
-import iconGrowNoName from '@img/icons/Icons without name/smipio-grow-main-logo-lightbg.png'
-import iconAchieve from '@img/icons/smipio-achieve-main-logo-lightbg.png'
-import iconAchieveNoName from '@img/icons/Icons without name/smipio-achieve-main-logo-lightbg.png'
+import logoAware from '@img/logo/unnamed.png'
+import logoIgnite from '@img/logo/unnamed (1).png'
+import logoGrow from '@img/logo/unnamed (2).png'
+import logoAchieve from '@img/logo/unnamed (3).png'
 import logoSmall from '@img/logo/smipio-logo-2026-small.png'
 import logoWordmarkLarge from '@img/logo/smipio-logo-2026-big.png'
 import logoTransform from '@img/logo/Colourful Butterfly Transform Logo.png'
@@ -34,23 +30,23 @@ export const images = {
   products: {
     aware: {
       illustration: productAware,
-      icon: iconAware,
-      nameIcon: iconAwareNoName,
+      icon: logoAware,
+      nameIcon: logoAware,
     },
     transform: {
       illustration: productTransform,
-      icon: logoIconLight,
-      nameIcon: iconIgniteNoName,
+      icon: logoIgnite,
+      nameIcon: logoIgnite,
     },
     grow: {
       illustration: productGrow,
-      icon: iconGrow,
-      nameIcon: iconGrowNoName,
+      icon: logoGrow,
+      nameIcon: logoGrow,
     },
     achieve: {
       illustration: productAchieve,
-      icon: iconAchieve,
-      nameIcon: iconAchieveNoName,
+      icon: logoAchieve,
+      nameIcon: logoAchieve,
     },
   },
   logo: {
@@ -65,10 +61,10 @@ export const images = {
     background: presentationBg,
   },
   pricing: {
-    aware: iconAware,
-    ignite: iconIgnite,
-    grow: iconGrow,
-    achieve: iconAchieve,
+    aware: logoAware,
+    ignite: logoIgnite,
+    grow: logoGrow,
+    achieve: logoAchieve,
   },
 }
 

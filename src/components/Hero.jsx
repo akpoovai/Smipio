@@ -40,7 +40,7 @@ export default function Hero() {
                 transition={{ duration: 0.75, ease }}
                 className={storyTextCol}
               >
-                <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-xl">
+                <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/28 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-sm">
                   TAKE CHARGE
                 </div>
                 <h1
@@ -88,7 +88,7 @@ export default function Hero() {
                 transition={{ duration: 0.75, delay: 0.12, ease }}
                 className={storyTextCol}
               >
-                <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-xl">
+                <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/28 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-sm">
                   TRANSFORM WISELY
                 </div>
                 <h2

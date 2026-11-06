@@ -48,7 +48,7 @@ export default function WhySmipioSection() {
         <div className={storyContainer}>
           <div className={storyGrid}>
             <div className={`${storyTextCol} min-w-0`}>
-              <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/58 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-xl">
+              <div className="inline-flex w-fit self-start items-center rounded-full border border-sandal/45 bg-white/28 px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[4px] text-black backdrop-blur-sm">
                 Why Smipio?
               </div>
 
